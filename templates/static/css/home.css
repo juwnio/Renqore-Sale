@@ -172,6 +172,12 @@
   .price-card .sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--grey-4);margin-top:18px}
   .price-card .mark{position:absolute;top:16px;left:16px;width:30px;height:30px;color:var(--grey-3)}
   p.enquiry{margin-top:22px}
+  p.pdf{margin-top:26px;margin-bottom:0}
+  p.pdf a{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--fg);border-bottom:1px solid var(--grey-3);
+  }
+  p.pdf a:hover{color:var(--red);border-color:var(--red)}
   p.cta{margin-top:22px;margin-bottom:0}
   p.cta a{
     font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;
