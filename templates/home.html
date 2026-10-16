@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renqore — For Sale</title>
+<meta name="description" content="Renqore is for sale — an LLM-powered recruitment automation platform for the UK market. Complete, documented, near-zero running cost. Asking £6,500 ONO.">
+<link rel="icon" href="static/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Departure+Mono&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/home.css">
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="wrap">
+
+  <header class="masthead reveal">
+    <svg class="logo" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Renqore logo">
+      <g transform="translate(20,20)">
+        <g stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round">
+          <rect x="2" y="2" width="96" height="96" rx="4" ry="4"/>
+          <line x1="62" y1="2" x2="62" y2="98"/>
+          <line x1="2" y1="62" x2="98" y2="62"/>
+          <path d="M62,2 A60,60 0 0,0 2,62"/>
+          <path d="M62,38 A24,24 0 0,1 38,62"/>
+          <line x1="76" y1="62" x2="76" y2="98"/>
+        </g>
+      </g>
+    </svg>
+    <div class="wordmark">RENQORE</div>
+    <div class="kicker">Recruitment automation &nbsp;·&nbsp; <b>asset sale</b> &nbsp;·&nbsp; October 2026</div>
+  </header>
+
+  <section class="reveal" id="what">
+    <div class="eyebrow"><span>01</span> What it is</div>
+    <h2>An LLM recruitment engine, built for the UK.</h2>
+    <p class="lead">
+      Renqore sources live jobs from Adzuna's UK market and ranks candidates by fit.
+      A UK recruitment agency uploads a batch of CVs and receives a scored, explained, exportable shortlist for every candidate &mdash; in minutes, not days.
+    </p>
+    <div class="chips">
+      <span class="chip">Flask + MongoDB</span>
+      <span class="chip">Ollama LLM scoring</span>
+      <span class="chip">Adzuna UK</span>
+      <span class="chip">Stripe billing</span>
+      <span class="chip hot">£0/mo to run</span>
+    </div>
+    <p class="cta"><a href="/demo">Watch the demo preview &rarr;</a></p>
+  </section>
+
+  <section class="reveal" id="built">
+    <div class="eyebrow"><span>02</span> What's built &mdash; and what's not</div>
+    <h2>The truth, in two columns.</h2>
+    <p>A working beta with its rough edges listed plainly beside it. Nothing here is hidden.</p>
+    <div class="split">
+      <div class="col done">
+        <h3>Working &amp; built</h3>
+        <ul class="tick">
+          <li>Adzuna UK job sourcing</li>
+          <li>LLM fit scoring (Ollama, 0&ndash;100 + reasoning)</li>
+          <li>Batch &amp; candidate management</li>
+          <li>CV upload, PDF/DOCX parsing &amp; storage</li>
+          <li>Email/password + Google sign-in</li>
+          <li>Multi-tenant orgs &amp; roles</li>
+          <li>Email invitations</li>
+          <li>Stripe subscriptions (trial / grace / expiry)</li>
+          <li>Daily quota (100 evaluations / 24h)</li>
+          <li>Excel exports (org / batch / candidate)</li>
+          <li>Dashboard, docs &amp; mobile view</li>
+          <li>Analytics &amp; in-app feedback</li>
+        </ul>
+      </div>
+      <div class="col pending">
+        <h3>Partial, rough or missing</h3>
+        <ul class="tick">
+          <li>City filter is cosmetic (not sent to Adzuna)</li>
+          <li>&ldquo;Remote&rdquo; job type is a no-op</li>
+          <li>Batch runs are synchronous (no worker/queue)</li>
+          <li>One-batch-at-a-time enforced in the UI only</li>
+          <li>No password-reset flow</li>
+          <li>API keys stored unencrypted</li>
+          <li>Only the &ldquo;starter&rdquo; plan is reachable</li>
+          <li>Only Ollama is wired up</li>
+          <li>No test suite, CI or Docker</li>
+          <li>Some unused dependencies &amp; dead code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal" id="costs">
+    <div class="eyebrow"><span>03</span> Monthly running costs</div>
+    <h2>It carries itself.</h2>
+    <p>Deliberately cheap to keep alive &mdash; effectively free on free tiers, and under &pound;30/month fully paid and always-on. No salaries, no servers to babysit, no minimum contracts.</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Role</th><th>Cost</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Render</td><td>Application hosting</td><td>Free – £7/mo</td></tr>
+        <tr><td>Ollama Cloud</td><td>LLM scoring</td><td>Free – $20/mo</td></tr>
+        <tr><td>MongoDB Atlas</td><td>Database + CV storage</td><td>Free tier (M0)</td></tr>
+        <tr><td>Adzuna API</td><td>UK job data</td><td>Free developer tier</td></tr>
+        <tr><td>Resend</td><td>Transactional email</td><td>Free (3,000/mo)</td></tr>
+        <tr><td>Google OAuth</td><td>Sign-in</td><td>Free</td></tr>
+        <tr><td>Domain</td><td>renqore.com</td><td>~£1/mo</td></tr>
+        <tr><td>Stripe</td><td>Payments</td><td>1.5% + 20p / sale</td></tr>
+        <tr class="total"><td colspan="2">Typical monthly total</td><td>~£0 free · ~£27 paid</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="reveal" id="included">
+    <div class="eyebrow"><span>04</span> What's included in the sale</div>
+    <h2>Everything, handed over cleanly.</h2>
+    <ul class="incl">
+      <li><span class="n">01</span><span class="t">Full source code</span> &mdash; Python/Flask backend &amp; a dependency-free JS frontend, MIT-licensed, with complete git history.</li>
+      <li><span class="n">02</span><span class="t">The Renqore brand</span> &mdash; the name, the logo, and the design system.</li>
+      <li><span class="n">03</span><span class="t">The renqore.com domain.</span></li>
+      <li><span class="n">04</span><span class="t">Service-account handover</span> &mdash; Stripe, Adzuna, Ollama, Resend, MongoDB Atlas &amp; Google OAuth, or guidance to stand up your own.</li>
+      <li><span class="n">05</span><span class="t">Documentation</span> &mdash; in-app docs, a full README, and a step-by-step setup runbook.</li>
+      <li><span class="n">06</span><span class="t">Two weeks of free handover support.</span> Beyond that, continued support is available at £90/day.</li>
+    </ul>
+  </section>
+
+  <section class="reveal" id="why">
+    <div class="eyebrow"><span>05</span> Why I'm selling</div>
+    <blockquote class="quote" id="quote">
+      <span id="quoteText"></span><span class="caret" aria-hidden="true"></span>
+    </blockquote>
+  </section>
+
+  <section class="reveal" id="price">
+    <div class="eyebrow"><span>06</span> Asking price</div>
+    <div class="price-card">
+      <svg class="mark" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(20,20)"><g stroke="currentColor" stroke-width="4" fill="none">
+          <rect x="2" y="2" width="96" height="96" rx="4" ry="4"/><line x1="62" y1="2" x2="62" y2="98"/><line x1="2" y1="62" x2="98" y2="62"/>
+          <path d="M62,2 A60,60 0 0,0 2,62"/><path d="M62,38 A24,24 0 0,1 38,62"/><line x1="76" y1="62" x2="76" y2="98"/>
+        </g></g>
+      </svg>
+      <div class="amount">£6,500</div>
+      <div class="sub">Or nearest offer &middot; ONO</div>
+    </div>
+    <p class="enquiry">Serious enquiries &mdash; and any question at all: <a href="mailto:renqore.ai@gmail.com?subject=Renqore%20%E2%80%94%20enquiry">renqore.ai@gmail.com</a>. I'll happily walk you through the platform and share the repository.</p>
+  </section>
+
+  <footer class="reveal">
+    <span class="mono">© 2025 Renqore</span>
+    <span class="mono">Code is ephemeral · function lives forever</span>
+  </footer>
+
+</main>
+
+<script src="static/js/home.js" defer></script>
+</body>
+</html>

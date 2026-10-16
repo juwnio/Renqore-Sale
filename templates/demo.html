@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renqore — Demo preview</title>
+<meta name="description" content="Screen recordings of the Renqore recruitment automation platform — adding a client and searching clients, straight from the asset folder.">
+<link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Departure+Mono&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/home.css">
+<link rel="stylesheet" href="/static/css/demo.css">
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="wrap">
+
+  <header class="masthead reveal">
+    <a class="logo-link" href="/" aria-label="Back to the Renqore sale page">
+      <svg class="logo" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Renqore logo">
+        <g transform="translate(20,20)">
+          <g stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round">
+            <rect x="2" y="2" width="96" height="96" rx="4" ry="4"/>
+            <line x1="62" y1="2" x2="62" y2="98"/>
+            <line x1="2" y1="62" x2="98" y2="62"/>
+            <path d="M62,2 A60,60 0 0,0 2,62"/>
+            <path d="M62,38 A24,24 0 0,1 38,62"/>
+            <line x1="76" y1="62" x2="76" y2="98"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <div class="wordmark">RENQORE</div>
+    <div class="kicker">Demo preview &nbsp;·&nbsp; <b>02 recordings</b> &nbsp;·&nbsp; October 2026</div>
+    <p class="back"><a href="/">&larr; Back to the sale page</a></p>
+  </header>
+
+  <section class="reveal" id="reel">
+    <div class="eyebrow"><span>01</span> The platform, in motion</div>
+    <h2>Watch it run.</h2>
+    <p class="lead">
+      Two short walkthroughs recorded straight from the working beta &mdash;
+      no edits, no mock-ups. Press play on either one.
+    </p>
+
+    <div class="video-grid">
+
+      <figure class="video-card reveal">
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline
+                 src="/static/assets/adding-client-demo.mp4">
+            Your browser does not support embedded video.
+            <a href="/static/assets/adding-client-demo.mp4">Download the recording</a>.
+          </video>
+        </div>
+        <figcaption>
+          <span class="n">01</span>
+          <div class="meta">
+            <div class="title">Adding a client</div>
+            <p class="desc">Recording a new client against a batch &mdash; the full create flow, end to end.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="video-card reveal">
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline
+                 src="/static/assets/searching-client-demo.mp4">
+            Your browser does not support embedded video.
+            <a href="/static/assets/searching-client-demo.mp4">Download the recording</a>.
+          </video>
+        </div>
+        <figcaption>
+          <span class="n">02</span>
+          <div class="meta">
+            <div class="title">Searching for a client</div>
+            <p class="desc">Looking a client up in the workspace &mdash; search, filter and open the record.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p class="note">
+      Raw files live in <code>static/assets/</code> &mdash; they load on demand, so nothing
+      downloads until you press play. Full source, docs and the rest of the assets are part of the sale.
+      Questions? <a href="mailto:renqore.ai@gmail.com?subject=Renqore%20%E2%80%94%20enquiry">renqore.ai@gmail.com</a>
+    </p>
+  </section>
+
+  <footer class="reveal">
+    <span class="mono">© 2025 Renqore</span>
+    <span class="mono"><a href="/">Home</a> &nbsp;·&nbsp; Demo preview</span>
+  </footer>
+
+</main>
+
+<script src="/static/js/demo.js" defer></script>
+</body>
+</html>

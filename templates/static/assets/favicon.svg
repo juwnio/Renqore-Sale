@@ -1,0 +1,13 @@
+<svg class="renqore-logo" width="16" height="16" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="140" height="140" fill="transparent"/>
+  <g transform="translate(20,20)">
+    <g stroke="white" stroke-width="4" fill="none">
+      <rect x="2" y="2" width="96" height="96" rx="4" ry="4" fill="black"/>
+      <line x1="62" y1="2" x2="62" y2="98"/>
+      <line x1="2" y1="62" x2="98" y2="62"/>
+      <path d="M62,2 A60,60 0 0,0 2,62"/>
+      <path d="M62,38 A24,24 0 0,1 38,62"/>
+      <line x1="76" y1="62" x2="76" y2="98"/>
+    </g>
+  </g>
+</svg>
